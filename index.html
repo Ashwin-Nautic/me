@@ -95,7 +95,7 @@ button:hover{
 <body>
 
 <!-- Music -->
-<audio autoplay loop>
+<audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
@@ -135,7 +135,7 @@ document.getElementById("actionBtn").classList.remove("fade-out");
 }
 
 function nextStep(){
-
+document.getElementById("bgMusic").play();
 if(step===1){
 
 changeContent(
